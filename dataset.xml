@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <action>
+        <name>approach</name>
+        <name>move</name>
+        <name>grasp</name>
+        <name>release</name>
+        <name>navigate</name>
+        <name>tilt</name>
+    </action>
+
+    <object>
+        <name>toy</name>
+        <name>cereal</name>
+        <name>milk</name>
+        <name>milkbox</name>
+        <name>table</name>
+        <name>box</name>
+        <name>bowl</name>
+        <name>bottle</name>
+        <name>cup</name>
+        <name>trash_can</name>
+
+        <color>red</color>
+        <color>green</color>
+        <color>blue</color>
+
+        <shape>rectangular</shape>
+        <shape>circular</shape>
+        <shape>triangular</shape>
+
+        <type>A</type>
+        <type>B</type>
+        <type>C</type>
+
+        <preposition>on</preposition>
+        <preposition>to</preposition>
+        <preposition>from</preposition>
+    </object>
+
+    <episode>
+        <event>approach red rectangular toy on table</event>
+        <event>grasp red rectangular toy</event>
+        <event>move red rectangular toy to C box</event>
+        <event>release red rectangular toy on C box</event>
+    </episode>
+
+    <episode>
+        <event>approach milkbox on table</event>
+        <event>grasp milkbox</event>
+        <event>navigate table to trash_can</event>
+        <event>move milkbox to trash_can</event>
+        <event>release milkbox on trash_can</event>
+        <event>navigate trash_can to table</event>
+    </episode>
+
+    <episode>
+        <event>approach bottle on table</event>
+        <event>grasp bottle</event>
+        <event>move bottle to cup</event>
+        <event>tilt bottle to cup</event>
+        <event>release bottle on table</event>
+        <event>approach milkbox on table</event>
+        <event>grasp milkbox</event>
+        <event>move milkbox to bowl</event>
+        <event>tilt milkbox to bowl</event>
+        <event>release milkbox on table</event>
+        <event>approach cereal on table</event>
+        <event>grasp cereal</event>
+        <event>move cereal to bowl</event>
+        <event>tilt cereal to bowl</event>
+        <event>release cereal on table</event>
+    </episode>
+
+    <cue>
+        <event>cereal</event>
+    </cue>
+</dataset>
+
